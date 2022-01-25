@@ -1,0 +1,41 @@
+.product{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.5vw;
+    row-gap: 0.5vw;
+    background-color: beige;
+    margin-top: 2vw;
+}
+
+.p-img{
+    width:60%;
+    height: 250px;
+    border-radius: 1vw;
+}
+
+
+.item{
+    width: 40vw;
+}
+
+.item:hover{
+    transform: scale(1.05,1.05);
+    transition: 0.3s;
+}
+
+@media screen and (max-width:425px) {
+    .product{
+        flex-direction: column;
+    }   
+    .item{
+        width: 95%;
+        text-align: center;
+    } 
+    .p-img{
+        height: 200px;
+        width: 90%;
+    }
+}

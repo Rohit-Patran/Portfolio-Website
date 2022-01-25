@@ -1,0 +1,131 @@
+.i{
+    display: flex;
+    background-color: beige;
+    height: 100vh;
+}
+
+.i-left{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.i-right{
+    flex: 1;
+    position: relative;
+}
+
+.i-left-wrapper{
+    padding: 5vw;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.i-intro{
+    font-weight: 500;
+}
+.i-name{
+    font-size:3vw;
+}
+
+.i-title{
+    overflow: hidden;
+    height: 2vw;
+    font-size: 1.5vw;
+}
+
+.i-title-item{
+    font-weight: bold;
+    color: green;
+    display: flex;
+    align-items: center;
+}
+
+.i-title-wrapper{
+    height: 99%;
+    animation: move ease-in-out infinite 8s alternate;
+}
+
+@keyframes move{
+    33%{
+        transform: translateY(-35px)
+    }
+    66%{
+        transform: translateY(-70px);
+    }
+    99%{
+        transform: translateY(-105px);
+    }
+}
+
+.i-img{
+    position: absolute;
+    top: 10vw;
+    left: 2vw;
+}
+
+.i-bg{
+    clip-path: polygon(55% 0, 100% 0, 100% 100%, 52% 100%, 0 100%);
+    background-color: crimson;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+    right: 0;
+}
+.i-about-me{
+    margin-top: 2vw;
+    font-size: 1.5vw;
+    font-style: italic;
+    border: rgb(221, 221, 183) solid 0.5vw;
+}
+
+@media screen and (max-width: 425px)
+{
+    .i{
+        display: flex;
+        flex-direction: column;
+        height: 70vh;
+    }
+    .i-left{
+        text-align: center;
+        flex: 0.3;
+    }
+    .i-intro{
+        font-weight: 500;
+    }
+    .i-name{
+        font-size:10vw;
+    }
+    .i-title{
+        display: flex;
+        justify-content: center;
+        height: 3vw;
+    }
+    .i-title-wrapper{
+        font-size: 3vw;
+    }
+    .i-about-me{
+        font-size: 4vw;
+    }
+    @keyframes move{
+        33%{
+            transform: translateY(-15px)
+        }
+        66%{
+            transform: translateY(-30px);
+        }
+        99%{
+            transform: translateY(-45px);
+        }
+    }
+    .i-right{
+        flex:0.7;
+    }
+    .i-img{
+        width: 90vw;
+        top:2vw;
+    }
+}

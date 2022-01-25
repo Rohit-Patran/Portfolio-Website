@@ -1,0 +1,39 @@
+.pl-texts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pl-title{
+ font-size: 2vw;
+}
+
+.pl-desc{
+    font-size: 1.2vw;
+    width: 30vw;
+    margin-top: 1.5vw;
+    text-align: center;
+    border-bottom:black 0.2vw dashed;
+    padding-bottom: 0.2vw;
+}
+
+.pl-list{
+    display: flex;
+    justify-content: center;
+}
+
+.pl{
+    background-color: beige;
+    padding-top: 2vw;
+}
+
+@media screen and (max-width:425px) {
+    .pl-title{
+        font-size: 7vw;
+    }
+    .pl-desc{
+        font-size: 5vw;
+        width: 90%;
+    }
+}

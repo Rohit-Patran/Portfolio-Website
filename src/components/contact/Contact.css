@@ -1,0 +1,46 @@
+.contact{
+    background-color: beige;
+}
+
+.icon-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 1vw;
+}
+
+.contact-title{
+    padding-top: 1vw;
+    border-bottom: dashed 0.2vw black;
+    padding-bottom: 0.5vw;
+    width: 10vw;
+    text-align: center;
+}
+
+.contact-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.c-img{
+    width:5vw;
+    margin-top: 1vw;
+}
+
+a:hover{
+    transform: scale(1.05,1.05);
+    transition: 0.3s;
+}
+
+@media screen and (max-width:425px) {
+    .c-img{
+        width: 10vw;
+    }
+    .contact-title{
+        width: 90%;
+    }
+}

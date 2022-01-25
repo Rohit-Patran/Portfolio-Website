@@ -1,0 +1,66 @@
+.about{
+    display:flex;
+    background-color: beige;
+    position: relative;
+}
+
+.a-left{
+    flex:1;
+    position: relative;
+}
+
+.a-right{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.a-img{
+    height: 70%;
+    width: 70%;
+}
+
+.a-right-container{
+    display: flex;
+    flex-direction: column;
+    clip-path: polygon(50% 0%, 100% 0, 100% 100%, 56% 100%, 0 0);
+    height: 100%;
+    width: 100%;
+    background-color: crimson;
+}
+
+.a-right-wrapper{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+.a-desc{
+    width: 70%;
+    font-size: 1vw;
+}
+
+.a-about-me{
+    font-size: 2vw;
+}
+
+@media screen and (max-width:425px) {
+    .about{
+        display: flex;
+        flex-direction: column;
+    }
+    .a-right-wrapper{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+    }
+    .a-right-container{
+        position: absolute;
+    }
+    .a-desc{
+        font-size: 4.5vw;
+    }
+}
